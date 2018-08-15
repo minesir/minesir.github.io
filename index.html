@@ -4,6 +4,8 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Mine的博客</title>
+		<link rel="stylesheet" type="text/css" href="assets/waifu.css"/>
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
 	</head>
 
 	<link href="plugin/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -26,6 +28,25 @@ var _hmt = _hmt || [];
 	<meta name="viewport" content="width=device-width, initial-scale=0.1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<body>
+	
+	<!---------------------------------------------------------------------------------------->
+	<div class="waifu">
+        <div class="waifu-tips"></div>
+        <canvas id="live2d" width="280" height="250" class="live2d"></canvas>
+        <div class="waifu-tool">
+            
+            <span class="fui-chat"></span>
+            <span class="fui-eye"></span>
+            <span class="fui-user"></span>
+            <span class="fui-photo"></span>
+
+        </div>
+    </div>
+        
+    <script src="assets/waifu-tips.js"></script>
+    <script src="assets/live2d.js"></script>
+    <script type="text/javascript">initModel("assets/")</script>
+<!---------------------------------------------------------------------------------------->
 		<div class="w_header">
 			<div class="container">
 				<div class="w_header_top">
@@ -34,6 +55,7 @@ var _hmt = _hmt || [];
 					<ul>
 						<li><a href="index.html" class="active">首页</a></li>
 						<li><a href="xue.html" class="active" target="_blank">教程</a></li>
+						<li><a href="zb/huya.html" class="active" target="_blank">直播</a></li>
 					</ul>
 				</span>
 										<div class="w_search">
